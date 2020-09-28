@@ -140,7 +140,9 @@ svg {
   width: 2em;
 }
 
-.map-marker:hover .map-marker-info{
+.map-marker:hover .map-marker-info,
+.map-marker:active .map-marker-info,
+.map-marker:focus .map-marker-info {
   display: block;   
 }
 
@@ -284,7 +286,7 @@ svg {
   width: 80px;
   border-radius: 40px;
   /* border: 2px solid white; */
-  box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+  /* box-shadow: 0 2px 2px rgba(0,0,0, 0.2); */
 
 }
 
