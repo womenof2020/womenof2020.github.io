@@ -63,7 +63,7 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.navbar-link a:hover {
+.navbar-link a:hover, .navbar-link a:active {
   color: #1e2145;
   letter-spacing: .2rem;
 }
@@ -141,7 +141,8 @@ svg {
   width: 2em;
 }
 
-.map-marker:hover .map-marker-info {
+.map-marker:hover .map-marker-info,
+.map-marker:active .map-marker-info {
   display: block;   
   cursor: pointer;
 }
@@ -373,4 +374,6 @@ svg {
       display: block;
   }
 }   
+
+
 
