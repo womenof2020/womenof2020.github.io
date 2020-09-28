@@ -69,6 +69,7 @@ body {
 
 .navbar-link a:hover {
     color: #1e2145;
+    letter-spacing: .2rem;
 }
 
 .navbar-links-icons {
@@ -158,29 +159,28 @@ h1 {
 .contact-page-title {
     padding-top: 10rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
 }
 .contact-container {
-    padding-top: 2rem;
     margin: auto;
     display: flex;
-    flex-direction: row;
     max-width: 700px;
-    /* background-color: red; */
+    background-color: white;
     color: #1e2145;
+    border-radius: 30px;
+    align-items: center;
+
 
 }
 
 
 .send-msg { 
     color: #1e2145;
-    padding-left: 4rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    /* padding-right: 2.5rem; */
-    /* border: 1px solid violet; */
-    background-color: white;
+    padding-left: 3rem ;
     width: 50%;
-
 }
 
 .send-msg-text {
@@ -209,7 +209,6 @@ h1 {
 
 .submit-btn:focus,
 .submit-btn:hover {
-	
 	box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
 	background-color: #fac1c0;
 }
@@ -218,10 +217,9 @@ h1 {
    /* border :1px solid violet; */
    display: flex;
    flex-direction: column;
-   padding: 1rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
    width: 50%;
-   background-color: white;
-
 }
 
 
@@ -229,10 +227,8 @@ h1 {
     
     line-height: 1.5;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 3rem;
-    flex-grow: 1;
-    flex-basis: 0
+    /* flex-grow: 1;
+    flex-basis: 0 */
 
 }
 
@@ -290,8 +286,8 @@ form {
     }
 
     .mail, .phone, .email {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }   
 

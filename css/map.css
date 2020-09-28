@@ -140,10 +140,9 @@ svg {
   width: 2em;
 }
 
-.map-marker:hover .map-marker-info,
-.map-marker:active .map-marker-info,
-.map-marker:focus .map-marker-info {
+.map-marker:hover .map-marker-info {
   display: block;   
+  cursor: pointer;
 }
 
 .marker {
@@ -159,6 +158,11 @@ svg {
   background: url(../img/map-marker-alt-solid.svg) 49% / 90% no-repeat;
   display: block;
   text-indent: -9999px;
+
+}
+.marker:hover, .map-marker:hover {
+  cursor: pointer;
+  /* background: url(../img/map-marker-alt-solid-hover.svg) 49% / 90% no-repeat; */
 
 }
 
