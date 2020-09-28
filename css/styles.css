@@ -288,5 +288,10 @@ form {
     .contact-options {
         font-size: 0.7rem;
     }
+
+    .mail, .phone, .email {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
 }   
 
