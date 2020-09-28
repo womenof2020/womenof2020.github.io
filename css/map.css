@@ -53,7 +53,6 @@ body {
 
 .navbar-link {
   list-style: none;
-  
 }
 
 .navbar-link a {
@@ -127,11 +126,6 @@ svg {
 
 .map-marker {
   position: absolute;
-}
-
-.map-marker .map-marker-info{
-
-  transition: all 0.2s ease-in;
 }
 
 .map-marker:after {
