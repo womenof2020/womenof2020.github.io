@@ -1,20 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-
-    // var name = document.getElementById("name").value;
-    //     console.log(name);
-    // // function bot() { 
-    // //     var name = document.getElementById("name").value;
-    // //     console.log(name);
-    // // }
-
-
-
-
-
     var sendMessage = document.getElementById('submit-btn');
-    
-
     console.log(sendMessage);
     sendMessage.addEventListener('click', function () {
         var name = document.getElementById("name").value;
