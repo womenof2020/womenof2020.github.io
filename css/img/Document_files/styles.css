@@ -1,0 +1,570 @@
+:root {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    --blue-color: #F0EBF4;
+    --purple-color:#B39BC8;
+    --off-white: #A1C3D1;
+    --light-pink: #F172A1;
+    --dark-pink:#E64398 ;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     color: black;
+     background-color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--dark-pink);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color:var(--off-white); 
+    z-index: 1;
+    padding: 0.6rem;
+
+}
+
+.website-name {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    
+}
+.website-namelogo {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+.website-logo{
+    width: 60px;
+    height: auto;
+}
+.navbar-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 4rem;
+    
+}
+
+.navbar-link {
+    list-style: none;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-link:hover {
+   background-color: var(--light-pink);
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links-icons {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.fa-facebook-square {
+    font-size: 1.5rem;
+    color: rgb(46, 69, 129);
+}
+
+.fa-instagram { 
+    font-size: 1.5rem;
+
+    color: rgb(139, 52, 132);
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+    color: rgb(39, 146, 233);
+}
+
+/* Homepage */
+
+.welcome-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10.5rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    /* border: 1px solid forestgreen; */
+
+}
+
+.intro {
+    /* border: 1px solid fuchsia; */
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-right: 1.5rem;
+  /* width: 50%;
+    height: 400px; */
+   
+}
+
+h1 {
+    margin: 0;
+}
+
+.homepage-title {
+    /* border: 1px solid orange; */
+    font-size: 2.2rem;
+    padding-left: 1rem;
+    border-left: 5px solid var(--purple-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+   
+   
+}
+
+.homepage-title-description {
+  
+   
+}
+
+.intro-img {
+    width: 50%;
+  /* 
+    height: 400px; */
+
+}
+
+.image {
+    /* border: 1px solid blue; */
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    height: auto;
+    
+  
+
+}
+/* 
+.welcome-grid .intro-img .image{
+    max-width: 100%;
+    height: auto;
+} */
+
+
+
+.map-title {
+    margin: auto;
+    max-width: 300px;
+    padding-top: 7rem;
+}
+
+.map-title h2 {
+    padding-left: 1rem;
+    border-left: 5px solid var(--purple-color);
+    
+}
+
+/* Map */
+
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.color1{
+    fill: var(--blue-color);
+}
+.color2 {
+    fill: var(--purple-color);
+}
+
+.color3{
+    fill: var(--off-white);
+}
+
+.color4{
+    fill: var(--light-pink);
+}
+
+.color5{
+    fill: var(--dark-pink);
+}
+
+.map-container {
+    max-width: 940px;
+    height: auto;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem
+}
+   
+.map {
+    position: relative;
+}
+  
+.map-markers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.map-marker {
+    position: absolute;
+}
+
+.map-marker .map-marker-info{
+  
+    transition: all 0.2s ease-in;
+}
+  
+.map-marker:after {
+    border-radius: 50%;
+    border: 1px solid green;
+    content: '';
+    height: 2em;
+    left: 0;
+    margin: -.5em 0 0 -.5em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 2em;
+}
+  
+.map-marker:hover .map-marker-info{
+    display: block;   
+}
+  
+.marker {
+    height: 2em;
+    border-radius: 50%;
+    width: 1.2em;
+    background: url(../img/map-marker-alt-solid.svg) 49% / 90% no-repeat;
+    display: block;
+    text-indent: -9999px;
+
+}
+
+.map-marker-rel{
+    left: 44.4%;
+    top: 25%;
+}
+
+.map-marker-ln {
+    left: 47.5%;
+    top: 25%;
+}
+  
+.map-marker-ss-c {
+    left: 49.2%;
+    top: 30%;
+}
+  
+.map-marker-le {
+    left: 52%;
+    top: 75%;
+}
+  
+.map-marker-nes {
+    left: 54%;
+    top: 40%;
+}
+  
+.map-marker-wm {
+    left: 57.5%;
+    top: 58%;
+}
+
+.map-marker-lg {
+    left: 41.5%;
+    top: 53.2%;
+}
+
+.map-marker-rbg {
+    left: 21.5%;
+    top: 33%;;
+}
+
+.map-marker-ag {
+    left: 8.5%;
+    top: 33%
+}
+
+.map-marker-aoc {
+    left: 19%;
+    top: 30%;
+}
+
+.map-marker-it {
+    left: 27%;
+    top: 49%;
+}
+
+.map-marker-ls {
+    left: 59%;
+    top: 20%;
+}
+
+.map-marker-csk {
+    left: 78.4%;
+    top: 55.9%;
+}
+
+.map-marker-pa {
+    left: 70%;
+    top: 45%;
+}
+
+.map-marker-ja {
+    left: 98%;
+    top: 89%;
+}
+
+.map-marker-tiw {
+    left: 83.1%;
+    top: 41%;
+}
+
+.map-marker-mcc {
+    left: 20%;
+    top: 63%;
+}
+
+.map-marker-rm {
+    left: 15.7%;
+    top: 48%;
+}
+.map-marker-ss {
+    left: 23.6%;
+    top: 46.1%;
+}
+
+  
+.map-marker-info {
+    display: none;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -2em);
+    width: 20em;
+    z-index: 999;
+    transition: all 0.2s ease-in;
+}
+  
+.info-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--off-white);
+    border-radius: .5em .5em 0 0;
+    color: white;
+    padding: .5em 1em;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.profile-picture {
+    max-width: 80px;
+    margin: auto;
+    
+}
+
+.profile-img {
+    width: 80px;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.name {
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+  
+}
+.info-main {
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-radius: 0 0 .5em .5em;
+    color: rgb(0, 0, 0);
+    padding: .5em 1em;
+}
+  
+
+.map-marker-info h2 {
+    margin-bottom: 0;
+}
+  
+.map-marker-info-inner {
+    border-radius: .5em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .3);
+    font-size: .875em;
+}
+  
+.map-marker-info:after {
+    content:'';
+    position:absolute;
+    width:1em;
+    height:1em;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background-color:white;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    z-index: -1;
+    border: 1px solid lightgray;
+
+}
+
+/* Footer */
+
+/* footer {
+    background-color: var(--off-white);
+    color: white;
+    padding: 3rem;
+} */
+
+.contact-container {
+    padding-top: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+}
+
+
+.news-letter-sign-up { 
+    padding: 20px;
+    max-width: 300px;
+    /* border: 1px solid violet; */
+    
+}
+
+.nl-msg {
+    text-align: center;
+}
+
+.nl-name, .nl-email { 
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+
+}
+
+.submit-btn {
+    border-radius: 10px;
+	border: 1px solid transparent;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	padding: 0.5rem;
+    transition: all 0.2s ease-in;
+    font-family: 'Raleway', sans-serif;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+	border-color: darkgray;
+	box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+	background-color: var(--dark-pink);
+}
+
+.contact-options {
+   /* border :1px solid violet; */
+   display: flex;
+   padding: 1rem;
+   width: 80%;
+
+}
+
+
+.mail, .phone, .email {
+    
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    flex-grow: 1;
+    flex-basis: 0
+
+}
+
+
+hr { 
+    border-top: 1px solid black;
+  }
+ 
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.footer-link {
+    padding: .7em;
+  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* PHONE */ 
+
+@media only screen and (max-width: 500px) {
+    
+   .navbar-links-icons {
+       display: flex;
+    }
+
+   .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+  
+   }
+
+   .marker {
+    margin-top: -0.33rem;
+    margin-left: -0.25rem;
+    height: 1rem;
+    width: 1rem;
+    background: url(../img/map-marker-alt-solid.svg) 49% / 60% no-repeat;
+   }
+
+    .contact-options {
+        display: block;
+    }
+}   
+
