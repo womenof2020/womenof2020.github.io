@@ -65,6 +65,7 @@ body {
 
 .navbar-link a:hover {
   color: #1e2145;
+  letter-spacing: .2rem;
 }
 
 .navbar-links-icons {
@@ -345,7 +346,7 @@ svg {
   }
 
   .map-description {
-    max-width: 320px;
+    max-width: 350px;
 
   }
   

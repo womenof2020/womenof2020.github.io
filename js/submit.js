@@ -1,8 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+
+    // var name = document.getElementById("name").value;
+    //     console.log(name);
+    // // function bot() { 
+    // //     var name = document.getElementById("name").value;
+    // //     console.log(name);
+    // // }
+
+
+
+
+
+    var sendMessage = document.getElementById('submit-btn');
     
-    var sendMessage = document.getElementsByClassName('submit-btn');
+
     console.log(sendMessage);
     sendMessage.addEventListener('click', function () {
-        alert('Message sent!');
+        var name = document.getElementById("name").value;
+        var nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1)
+        alert('Thank you ' + nameCapitalized + '! Your message has been sent!');
     })
 })
+
+
